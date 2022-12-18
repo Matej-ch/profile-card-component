@@ -16,7 +16,7 @@ type Props = {
 
 function ProfileCard(props: Props) {
 
-    return (<div className={'profile-card'}>
+    return (<div className={'profile-card'} role="main">
 
         <div className={'background'}>
 
