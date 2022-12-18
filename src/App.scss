@@ -1,0 +1,47 @@
+#root {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.bg-pattern {
+  position: absolute;
+  max-width: 500px;
+}
+
+.bg-pattern.top {
+  top: -25%;
+  right: 50%;
+}
+
+.bg-pattern.bottom {
+  bottom: -25%;
+  left: 50%;
+}
+
+
+@media screen and (min-width: 376px) {
+  #root {
+    max-width: 1250px;
+  }
+
+  .bg-pattern {
+    max-width: 900px;
+  }
+
+
+  .bg-pattern.top {
+    top: -45%;
+    right: 50%;
+  }
+
+  .bg-pattern.bottom {
+    bottom: -45%;
+    left: 50%;
+  }
+}

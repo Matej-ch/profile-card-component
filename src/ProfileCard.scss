@@ -1,0 +1,75 @@
+.profile-card {
+  background-color: white;
+  z-index: 10;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+
+  .background {
+    background-image: url("./assets/bg-pattern-card.svg");
+    background-color: var(--cyan);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    padding: 1rem;
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .profile-picture {
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info {
+    padding: 4rem 1rem 1.5rem 1rem;
+  }
+
+  .name {
+    font-size: var(--nameFontSize);
+    font-weight: 700;
+    color: var(--desaturatedBlue);
+
+    span {
+      font-weight: 400;
+      color: var(--darkGrayBlue);
+    }
+  }
+
+  .city {
+    color: var(--darkGrayBlue);
+    font-size: 14px;
+  }
+
+  .stats {
+    border-top: 1px solid var(--darkGray);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .stat-count {
+    font-size: var(--nameFontSize);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    color: var(--desaturatedBlue);
+
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      color: var(--darkGray);
+    }
+  }
+}
